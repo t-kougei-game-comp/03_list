@@ -13,6 +13,7 @@ int main(int argc, char *argv[])
     list *header =  NULL;
     
     while(fgets(str, sizeof(str), stdin)){
+        printf("%d\n", strcmp(str,"-"));
         if(strcmp(str,"-")==0){// 先頭を削除
             list *p = header;
             if(p){
