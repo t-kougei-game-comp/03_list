@@ -12,9 +12,10 @@ int main(int argc, char *argv[])
     char str[5];
     list *header =  NULL;
     
-    while(fgets(str, sizeof(str), stdin)){
-        printf("%d\n", strcmp(str,"-"));
-        if(strcmp(str,"-")==0){// 先頭を削除
+    while(gets(str, sizeof(str), stdin)){
+        str[strlen(str) - 1] = '\0';// 改行コードを終端記号に置換
+        if(strcmp(str,"-")==0){
+            // 先頭を削除
             list *p = header;
             if(p){
                 printf("%d\n", p->value);
@@ -23,7 +24,8 @@ int main(int argc, char *argv[])
             }
         }else{
             int n = atoi(str);
-            if(n==0){// リストを表示
+            if(n==0){
+                // リストを表示
                 list *p = header;
                 while(p){
                     printf("%d", p->value);
