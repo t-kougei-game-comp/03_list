@@ -9,7 +9,7 @@ typedef struct list{
 
 int main(int argc, char *argv[]) 
 {
-    char str[5];
+    char str[6];
     list *header =  NULL;
     
     while(fgets(str, sizeof(str), stdin)){
