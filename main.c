@@ -2,7 +2,7 @@
 #include <stdlib.h>
 
 typedef struct list{
-    list *next;
+    struct list *next;
     int value;
 }list;
 
