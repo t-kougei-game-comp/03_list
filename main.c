@@ -14,7 +14,7 @@ int main(int argc, char *argv[])
     
     while(fgets(str, sizeof(str), stdin)){
         int n = atoi(str);
-        printf("* %d\n", p->value);
+        printf("$$$ %d\n", p->value);
         if(n == 0){
             // リストを表示
             list *p = header;
