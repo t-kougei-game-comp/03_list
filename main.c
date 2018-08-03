@@ -14,6 +14,7 @@ int main(int argc, char *argv[])
     
     while(fgets(str, sizeof(str), stdin)){
         str[strlen(str) - 1] = '\0';// 改行コードを終端記号に置換
+        fprintf("%d\n", strcmp(str,"-"));
         if(strcmp(str,"-")==0){
             // 先頭を削除
             list *p = header;
