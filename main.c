@@ -12,7 +12,7 @@ int main(int argc, char *argv[])
     char str[5];
     list *header =  NULL;
     
-    while(gets(str, sizeof(str), stdin)){
+    while(fgets(str, sizeof(str), stdin)){
         str[strlen(str) - 1] = '\0';// 改行コードを終端記号に置換
         if(strcmp(str,"-")==0){
             // 先頭を削除
