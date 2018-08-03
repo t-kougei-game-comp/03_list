@@ -2,14 +2,14 @@
 #include <stdlib.h>
 
 typedef struct list{
-    struct list *next;
+    list *next;
     int value;
 }list;
 
 int main(int argc, char *argv[]) 
 {
     char str[5];
-    list *header = nullptr;
+    list *header =  NULL;
     
     while(fgets(str, sizeof(str), stdin)){
         if(strcmp(str,"-")==0){// 先頭を削除
