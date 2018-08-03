@@ -1,8 +1,8 @@
 #include <stdio.h>
 #include <stdlib.h>
 
-typedef struct{
-    list *next;
+typedef struct list{
+    struct list *next;
     int value;
 }list;
 
