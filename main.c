@@ -1,10 +1,10 @@
 #include <stdio.h>
 #include <stdlib.h>
 
-typedef struct list{
+typedef struct{
     list *next;
     int value;
-};
+}list;
 
 int main(int argc, char *argv[]) 
 {
